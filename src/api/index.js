@@ -3,6 +3,7 @@ export default async function apiCall({url, method = "get", body, headers}){
         const respose = await fetch(url,{method, body, headers});
         return respose.json();
     }catch(error){
-        Promise.reject(error)
+
+        return Promise.reject(error)
     }
 }

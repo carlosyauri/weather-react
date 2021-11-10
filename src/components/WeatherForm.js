@@ -8,7 +8,18 @@ export default function WeatherForm(props){
                 <div className="form-group">
                     <input  type="text" name="country" placeholder="ingrese su pais" className="form-control"/>
                 </div>
+                <div className="form-group">
+                    <label> Unidad de temperatura
+                        <select name="unidad">
+                            <option value="" disabled selected>Selecc. unidad</option>
+                            <option value="imperial">Fahrenheit</option>
+                            <option value="metric">Celcius</option>
+                        </select>
+                    </label>
+                </div> 
+                
                 <button className="btn btn-success btn-block">Obtener clima</button>
+
             </form>
         </div>
     )
